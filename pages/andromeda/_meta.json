@@ -1,4 +1,7 @@
 {
-    "ReverseProxy": "Reverse Proxies",
-    "ServerSplitter": "Server Splitter"
+    "features": "Features",
+    "files": "File Manager",
+    "backups": "Backups Management",
+    "databases": "Database Management",
+    "minecraft": "Minecraft Features"
 }

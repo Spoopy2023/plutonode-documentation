@@ -10,20 +10,32 @@ import { Callout } from 'nextra/components'
 
 **1.** On the sidebar on the left-hand side of Andromeda click "Proxies"
 
-![Proxies link on the sidebar](./img/proxies-SB.png)
+![Proxies link on the sidebar](../img/proxies-SB.png)
 
 **2.** Click on the button labled "Create Proxy"
 
-![Proxies link on the sidebar](./img/proxies-cb.png)
+![Proxies link on the sidebar](../img/proxies-cb.png)
 
 **3.** Fill in the "domain" field and select the allocation (port) your service, for example Dynmap, is running on, finally select the `Auto Generate SSL certificate` toggle if you want an SSL cerfificate to be generated.
 <Callout type="warning" emoji="⚠️">
-  We advise only users with advanced knowlege uncheck the `Auto Generate SSL certificate` toggle. If you do not know what you are doing and you uncheck this it can cause issues.
+  We do not advise users uncheck the `Auto Generate SSL certificate` toggle. If your service requires an SSL certificate and you have unchecked this option you will have to delete and re-create this reverse proxy.
 </Callout>
 
-![Proxies link on the sidebar](./img/proxies-cm.png)
+![Proxies link on the sidebar](../img/proxies-cm.png)
 
 **4.** Andromeda will now create a reverse proxy fo this service and you can now access it using the domain you setup.
+
+
+## How to delete a Reverse Proxy on Andromeda
+
+Deleting a reverse proxy is a simple process, this guide will walk you through it.
+
+To deletea reverse proxy click the `"Delete"` button on the right-hand side.
+![Subdomain Delete BTN](../img/subdomain-lvd.png)
+
+This will open a context menu prompting you to confirm the reverse proxy deletion.<br/> You are required to entire the reverse proxy name to prevent accidental deletion.
+
+![Subdomain Delete CM](../img/subdomain-dcm.png)
 
 ***
 
