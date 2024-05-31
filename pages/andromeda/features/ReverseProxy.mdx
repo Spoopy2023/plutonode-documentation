@@ -3,7 +3,7 @@ import { Callout } from 'nextra/components'
 
 # How to create a Reverse Proxy on your service
 ***
-<Callout type="info" >
+<Callout type="info" emoji=" " >
   A reverse proxy allows you to mask a service that is running under a port on your Minecraft server. This is most useful with plugins which use a port that users should access like Dynmap. It converts the URL from  `x.x.x.x:25678` to `my.domain.com`.
 </Callout>
 ## How to create a Reverse Proxy on Andromeda
@@ -17,7 +17,7 @@ import { Callout } from 'nextra/components'
 ![Proxies link on the sidebar](../img/proxies-cb.png)
 
 **3.** Fill in the "domain" field and select the allocation (port) your service, for example Dynmap, is running on, finally select the `Auto Generate SSL certificate` toggle if you want an SSL cerfificate to be generated.
-<Callout type="warning" emoji="⚠️">
+<Callout type="warning" emoji=" " >
   We do not advise users uncheck the `Auto Generate SSL certificate` toggle. If your service requires an SSL certificate and you have unchecked this option you will have to delete and re-create this reverse proxy.
 </Callout>
 
