@@ -33,8 +33,7 @@ const config: DocsThemeConfig = {
   },
   feedback: {
     content: null
-  },
-
+  }
 }
 
 

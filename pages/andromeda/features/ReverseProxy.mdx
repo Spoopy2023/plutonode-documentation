@@ -1,5 +1,5 @@
 import { Callout } from 'nextra/components'
-
+import { Steps } from 'nextra/components'
 
 # How to create a Reverse Proxy on your service
 ***
@@ -7,35 +7,36 @@ import { Callout } from 'nextra/components'
   A reverse proxy allows you to mask a service that is running under a port on your Minecraft server. This is most useful with plugins which use a port that users should access like Dynmap. It converts the URL from  `x.x.x.x:25678` to `my.domain.com`.
 </Callout>
 ## How to create a Reverse Proxy on Andromeda
+<Steps>
+###  On the sidebar on the left-hand side of Andromeda click "Proxies"
 
-**1.** On the sidebar on the left-hand side of Andromeda click "Proxies"
+![Proxies link on the sidebar](../assets/proxies-SB.png)
 
-![Proxies link on the sidebar](../img/proxies-SB.png)
+###  Click on the button labled "Create Proxy"
 
-**2.** Click on the button labled "Create Proxy"
+![Proxies link on the sidebar](../assets/proxies-cb.png)
 
-![Proxies link on the sidebar](../img/proxies-cb.png)
-
-**3.** Fill in the "domain" field and select the allocation (port) your service, for example Dynmap, is running on, finally select the `Auto Generate SSL certificate` toggle if you want an SSL cerfificate to be generated.
+###  Fill in the "domain" field and select the allocation (port) your service, for example Dynmap, is running on, finally select the `Auto Generate SSL certificate` toggle if you want an SSL cerfificate to be generated.
 <Callout type="warning" emoji=" " >
   We do not advise users uncheck the `Auto Generate SSL certificate` toggle. If your service requires an SSL certificate and you have unchecked this option you will have to delete and re-create this reverse proxy.
 </Callout>
 
-![Proxies link on the sidebar](../img/proxies-cm.png)
+![Proxies link on the sidebar](../assets/proxies-cm.png)
 
-**4.** Andromeda will now create a reverse proxy fo this service and you can now access it using the domain you setup.
-
+###  Andromeda will now create a reverse proxy fo this service and you can now access it using the domain you setup.
+</Steps>
 
 ## How to delete a Reverse Proxy on Andromeda
 
 Deleting a reverse proxy is a simple process, this guide will walk you through it.
 
 To deletea reverse proxy click the `"Delete"` button on the right-hand side.
-![Subdomain Delete BTN](../img/subdomain-lvd.png)
+![Subdomain Delete BTN](../assets/subdomain-lvd.png)
 
 This will open a context menu prompting you to confirm the reverse proxy deletion.<br/> You are required to entire the reverse proxy name to prevent accidental deletion.
 
-![Subdomain Delete CM](../img/subdomain-dcm.png)
+![Subdomain Delete CM](../assets/subdomain-dcm.png)
+
 
 ***
 
